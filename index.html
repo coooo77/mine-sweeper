@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mine Sweeper</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+  <div id="gameBackground">
+
+    <div id="gameContainer">
+      <div id="header">
+        <p>Mine Sweeper</p>
+        <div id="function">
+          <div id="numberOfMine">0</div>
+          <div id="face">
+            <button id="faceButton" onclick="view.reCreateGame()"><i class="far fa-smile"></i></button>
+
+          </div>
+          <div id="timer">000</div>
+        </div>
+      </div>
+      <div id="Fields">
+      </div>
+      <div id="cheat"><button id="cheat">Cheat!</button></div>
+    </div>
+
+    <div id="userSetting">
+      <div id="input">
+        <div class="userSettingTitle">
+          <div class="userNameTitle">User</div>
+          <div class="rowAndcolumnTitle">Size</div>
+          <div class="numberOfMinesTitle">Number of Mines</div>
+        </div>
+      </div>
+      <div id="userSettingInput">
+        <input type="text" id="userNameInput" placeholder="Your Name">
+        <input type="text" id="rowAndcolumnInput" placeholder="Height and Width">
+        <input type="text" id="numberOfMinesInput" placeholder="Number of Mines">
+      </div>
+      <button id="userSettingButton">Create</button>
+    </div>
+
+    <div id="displaybox">
+      <div id="navigation">
+        <a class="navbar-Record" href="#">Record</a>
+        <a class="navbar-Movie" href="#">Movie</a>
+      </div>
+
+      <div id="content">
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
